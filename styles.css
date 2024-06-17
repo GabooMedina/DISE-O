@@ -1,0 +1,119 @@
+:root{
+    --header:#A0D5D6;
+    --section:#789AA1;
+    --h1:#DCEBDD;
+    --h2:#AD9A27;
+    --footer:#304345;
+}
+@import url('https://fonts.googleapis.com/css2?family=Kreon:wght@300..700&display=swap');
+
+/*Neutralidad*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 90%;
+    font-family: "Poppins", sans-serif;
+    background-color: #ffc;
+    margin: 0 auto;
+}
+
+
+header{
+    background-color: var(--header);
+    height: 90px;
+    text-align: center;
+    font-family: kreon;
+}
+
+section{
+    background-color: var(--section);
+    float: left;
+}
+
+article{
+    float: left;
+    width: 60%;
+    margin-left: 2%;
+}
+
+aside{
+    width: 30%;
+    margin-right: 2%;
+    float: right;
+}
+
+footer{
+    background-color: var(--footer);
+    clear: both;
+}
+
+h3{
+    text-align: center;
+    color: var(--h2);
+    padding-top: 1em;
+}
+
+h1{
+    color: var(--h1);
+    line-height: 1.5em;
+    letter-spacing: 10px;
+}
+h2{
+    color: var(--h2);
+}
+
+.izq{
+    float: left;
+    margin-right: 1em;
+}
+
+p{
+    padding-top: 1em;
+}
+.der{
+    float: right;
+    margin-left: 1em;
+}
+nav{
+    font-size: .7em;
+    color: #AD9A27;
+    text-align: center;
+}
+
+ul, li{
+    list-style: none;
+    display: inline;
+}
+
+a{
+    text-decoration: none;
+    color: var(--h2);
+    text-align: center;
+}
+
+/*Responsive*/
+
+@media screen and (max-width: 460px){
+    article{
+        width: 100%;
+        margin-left: 0;
+    }
+    aside{
+        width: 100%;
+        margin-right: 0;
+    }
+    .izq{
+        float: none;
+        margin-right: 0;
+        width: 100%;
+    }
+    .der{
+        float: none;
+        margin-left: 0;
+        width: 100%;
+    }
+}
